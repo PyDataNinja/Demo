@@ -64,6 +64,7 @@ fig = go.Figure()
 fig.add_trace(go.Bar(y=top_growth_companies.index, x=risk_growth_rate_companies, name='Risk Growth Rate Companies',orientation='h'))
 fig.add_trace(go.Bar(y=selected_companies.index, x=risk_mutual_fund_companies, name='Risk Mutual Fund Companies',orientation='h'))
 fig.update_layout(title='Risk Comparison', xaxis_title='Companies', yaxis_title='Risk')
+plt.savefig('Risk Comparison')
 fig.show()
 
 
