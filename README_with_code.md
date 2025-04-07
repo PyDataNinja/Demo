@@ -54,7 +54,7 @@ all_companies = data.columns[1:]
 volatility_all_companies = data[all_companies].std()
 print(volatility_all_companies.sort_values(ascending=False).head(10))
 ```
-
+![img1](Image/stock1.png)
 ---
 
 ### 4. **Return Calculation**
@@ -69,7 +69,7 @@ final_price_all = data[all_companies].iloc[-1]
 roi_all_companies = ((final_price_all - initial_price_all) / initial_price_all) * 100
 print(roi_all_companies.sort_values(ascending=False).head(10))
 ```
-
+![img2](Image/stock2.png)
 ---
 
 ### 5. **High ROI, Low Volatility Stocks**
@@ -80,7 +80,7 @@ roi_threshold = roi_all_companies.median()
 selected_companies = roi_all_companies[(roi_all_companies > roi_threshold) & (volatility_all_companies < volatility_threshold)]
 print(selected_companies.sort_values(ascending=False))
 ```
-
+![img3](Image/stock3.png)
 ---
 
 ### 6. **Investment Allocation Strategy**
@@ -91,7 +91,7 @@ inverse_volatility = 1 / selected_volatility
 investment_ratio = (inverse_volatility / inverse_volatility.sum()) * 100
 print(investment_ratio.sort_values(ascending=False))
 ```
-
+![img4](Image/stock4.png)
 ---
 
 ### 7. **Risk Comparison Plot**
