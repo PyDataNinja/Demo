@@ -137,3 +137,6 @@ fig.show()
 ## 📬 Contact
 
 Feel free to reach out if you want to discuss further improvements or collaborate!
+
+If you like this project, please consider leaving a ⭐️  on the repository to show your support!
+
