@@ -44,7 +44,7 @@ for comp in data.columns[1:]:
 fig.update_layout(title='Nifty 50 Closing Prices', xaxis_title='Date', yaxis_title='Closing Price(INR)')
 fig.show()
 ```
-
+![Trend](Image/StockTrend.png)
 ---
 
 ### 3. **Volatility Calculation**
@@ -107,7 +107,7 @@ fig.add_trace(go.Bar(y=selected_companies.index, x=risk_mutual_fund_companies, n
 fig.update_layout(title='Risk Comparison', xaxis_title='Companies', yaxis_title='Risk')
 fig.show()
 ```
-
+![Trend2](Image/Risk_Comparison.png)
 ---
 
 ## 🚀 How to Run
