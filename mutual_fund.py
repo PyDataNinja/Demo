@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
+import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
 data=pd.read_csv(r'nifty50_closing_prices.csv')
@@ -21,6 +22,7 @@ fig=go.Figure()
 for comp in data.columns[1:]:
     fig.add_trace(go.Scatter(x=data['Date'],y=data[comp],name=comp))
 fig.update_layout(title='Nifty 50 Closing Prices',xaxis_title='Date',yaxis_title='Closing Price(INR)')
+plt.savefig('closing Prices')
 fig.show()  
 
 # Calculate teh companies with high risk
