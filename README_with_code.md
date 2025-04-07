@@ -28,7 +28,7 @@ warnings.filterwarnings('ignore')
 ### 1. **Data Loading and Cleaning**
 
 ```python
-data = pd.read_csv(r'C:\Users\DELL\Downloads\Portfolio\Data Science\nifty50_closing_prices.csv')
+data = pd.read_csv(r'nifty50_closing_prices.csv')
 data['HDFC.NS'] = data['HDFC.NS'].fillna(data['HDFC.NS'].mean())
 data['Date'] = pd.to_datetime(data['Date'])
 ```
